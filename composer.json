@@ -1,0 +1,23 @@
+{
+    "name": "mlavrk/array-random-value",
+    "description": "Provides simple function to get random value from array",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mike L",
+            "email": "git@lavrik.in.ua"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "files": [
+            "src/array_random_value.php"
+        ]
+    }
+}
