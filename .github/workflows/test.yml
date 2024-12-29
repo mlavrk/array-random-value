@@ -1,0 +1,26 @@
+name: Run tests
+
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php-versions:
+          - '7.0'
+          - '7.4'
+          - '8.2'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-versions }}
+      - name: Validate composer configuration
+        run: composer validate
+      - name: Install dependencies
+        run: composer install --no-progress
+      - name: Run tests
+        run: composer run-script test

@@ -19,5 +19,8 @@
         "files": [
             "src/array_random_value.php"
         ]
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit"
     }
 }
