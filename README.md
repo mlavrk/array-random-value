@@ -2,7 +2,7 @@
 
 ![tests workflow](https://github.com/mlavrk/array-random-value/actions/workflows/test.yml/badge.svg)
 
-A simple PHP library that provides a utility function to get a random value from an array. If the array is empty, the function returns `null`.
+A simple PHP library that provides a utility function to get a random value from an array. It uses the `random_int()` function for secure randomness. If the array is empty, the function returns `null`.
 
 ## Installation
 

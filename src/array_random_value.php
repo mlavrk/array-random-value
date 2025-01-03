@@ -10,5 +10,8 @@ function array_random_value(array $array)
         return null;
     }
 
-    return $array[array_rand($array)];
+    $keys = array_keys($array);
+    $randomKey = random_int(0, count($keys) - 1);
+
+    return $array[$keys[$randomKey]];
 }
