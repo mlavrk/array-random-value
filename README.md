@@ -10,7 +10,9 @@ This project is created for learning purposes. However, the functionality is ful
 
 ## Installation
 
-TODO
+```bash
+composer require mlavrk/array-random-value
+```
 
 ## Usage
 
